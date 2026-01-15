@@ -1,0 +1,9 @@
+{
+	"name": "git-commands",
+	"description": "Streamline your git workflow with simple commands for committing, pushing, and creating pull requests",
+	"author": {
+		"name": "ebming",
+		"email": "ag@ebming.com"
+	},
+	"version": "0.1.1"
+}
