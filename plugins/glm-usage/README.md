@@ -9,25 +9,47 @@
 /plugin install glm-usage
 ```
 
-## 配合 claude-hud 使用
+## 快速配置
 
-1. 安装 claude-hud：
+安装后，运行 setup 命令自动配置：
+
+```bash
+/glm-usage:setup
+```
+
+这会自动：
+- 更新 `~/.claude/settings.json` 添加 GLM 标签命令
+- 更新 claude-hud 配置使用 compact 模式
+- 创建 GLM 使用量脚本
+
+然后重启 Claude Code 即可。
+
+## 手动配置
+
+如果自动配置失败，可以手动配置：
+
+### 1. 安装 claude-hud
+
 ```bash
 /plugin marketplace add jarrodwatts/claude-hud
 /plugin install claude-hud
 ```
 
-2. 修改 `~/.claude/settings.json` 中的 statusLine 命令，添加 `--extra-cmd` 参数：
+### 2. 更新 settings.json
+
+修改 `~/.claude/settings.json` 中的 statusLine 命令：
 
 ```json
 {
   "statusLine": {
-    "command": "plugin_dir=$(ls -d ~/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | sort -V | tail -1); exec /opt/homebrew/bin/bun ${plugin_dir}dist/index.js --extra-cmd='$HOME/.claude/plugins/cache/ebm-universal-plugins/glm-usage/dist/label.mjs'"
+    "command": "plugin_dir=$(ls -d ~/.claude/plugins/cache/claude-hud/claude-hud/*/ 2>/dev/null | sort -V | tail -1); exec /opt/homebrew/bin/bun ${plugin_dir}dist/index.js --extra-cmd='/opt/homebrew/bin/bun ~/.claude/plugins/cache/ebm-universal-plugins/glm-usage/dist/label.mjs'"
   }
 }
 ```
 
-3. 修改 `~/.claude/plugins/claude-hud/config.json`，使用 compact 模式：
+### 3. 更新 claude-hud 配置
+
+修改 `~/.claude/plugins/claude-hud/config.json`：
 
 ```json
 {
@@ -35,9 +57,11 @@
 }
 ```
 
-4. 重启 Claude Code
+### 4. 重启 Claude Code
 
-你会看到类似这样的显示：
+## 效果
+
+配置完成后，你会看到类似这样的显示：
 
 ```
 [Opus] │ aitoearn-electron git:(main)

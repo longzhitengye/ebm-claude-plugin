@@ -1,0 +1,15 @@
+{
+  "name": "glm-usage",
+  "description": "Show GLM (智谱) Token usage in Claude Code HUD",
+  "version": "1.0.0",
+  "author": {
+    "name": "ebming",
+    "email": "ag@ebming.com"
+  },
+  "commands": {
+    "setup": {
+      "description": "Configure claude-hud to show GLM Token usage",
+      "path": "./commands/setup.md"
+    }
+  }
+}
