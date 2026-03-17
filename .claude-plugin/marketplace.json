@@ -17,7 +17,17 @@
 			"source": "./plugins/git-commands",
 			"category": "productivity",
 			"homepage": "https://github.com/longzhitengye/ebm-claude-plugin/tree/main/plugins/git-commands"
+		},
+		{
+			"name": "glm-usage",
+			"description": "Show GLM (智谱) Token usage in Claude Code HUD - displays 5-hour quota usage percentage",
+			"author": {
+				"name": "ebming",
+				"email": "ag@ebming.com"
+			},
+			"source": "./plugins/glm-usage",
+			"category": "monitoring",
+			"tags": ["glm", "智谱", "usage", "token", "monitoring", "hud"]
 		}
-
 	]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "glm-usage",
+  "version": "1.0.0",
+  "description": "Show GLM (智谱) Token usage in Claude Code HUD",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": "dist/label.mjs",
+  "author": "ebming <ag@ebming.com>",
+  "license": "MIT",
+  "keywords": ["glm", "智谱", "usage", "token", "monitoring"],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
