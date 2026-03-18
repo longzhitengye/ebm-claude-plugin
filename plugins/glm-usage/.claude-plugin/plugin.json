@@ -9,7 +9,7 @@
   "commands": {
     "setup": {
       "description": "Configure claude-hud to show GLM Token usage",
-      "path": "./commands/setup.md"
+      "source": "./commands/setup.md"
     }
   }
 }
