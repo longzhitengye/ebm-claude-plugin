@@ -20,14 +20,7 @@
 		},
 		{
 			"name": "release-push",
-			"description": "发布版本的时候,修改版本号,生成 changelog,并且 push 到远程仓库. 只通过`/release-push` 命令触发.",
-			"author": {
-				"name": "ebming",
-				"email": "ag@ebming.com"
-			},
-			"strict": false,
-			"source": "./plugins/release-push",
-			"category": "productivity"
+			"source": "./plugins/release-push"
 		}
 	]
 }

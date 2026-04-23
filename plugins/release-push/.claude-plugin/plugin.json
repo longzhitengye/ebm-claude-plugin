@@ -1,5 +1,12 @@
 {
   "name": "release-push",
+  "description": "Bump version, generate changelog, and push to remote via /release-push command. Supports Node.js, Flutter, Python (Poetry).",
   "version": "1.0.0",
+  "author": {
+    "name": "ebming",
+    "email": "ag@ebming.com"
+  },
+  "keywords": ["release", "version", "changelog", "semver", "publish", "nodejs", "flutter", "python", "poetry"],
+  "category": "productivity",
   "skills": "./"
 }
