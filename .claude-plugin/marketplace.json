@@ -1,5 +1,4 @@
 {
-	"$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
 	"name": "ebm-universal-plugins",
 	"description": "Directory of popular Claude Code extensions including development tools, productivity plugins, and MCP integrations",
 	"owner": {
@@ -8,26 +7,27 @@
 	},
 	"plugins": [
 		{
-			"name": "git-commands",
-			"description": "Commands for git commit workflows including commit, push, and PR creation",
-			"author": {
-				"name": "ebming",
-				"email": "ag@ebming.com"
-			},
-			"source": "./plugins/git-commands",
-			"category": "productivity",
-			"homepage": "https://github.com/longzhitengye/ebm-claude-plugin/tree/main/plugins/git-commands"
-		},
-		{
 			"name": "glm-usage",
 			"description": "Show GLM (智谱) Token usage in Claude Code HUD - displays 5-hour quota usage percentage",
 			"author": {
 				"name": "ebming",
 				"email": "ag@ebming.com"
 			},
+			"strict": false,
 			"source": "./plugins/glm-usage",
 			"category": "monitoring",
-			"tags": ["glm", "智谱", "usage", "token", "monitoring", "hud"]
+			"tags": [ "glm", "智谱", "usage", "token", "monitoring", "hud" ]
+		},
+		{
+			"name": "release-push",
+			"description": "发布版本的时候,修改版本号,生成 changelog,并且 push 到远程仓库. 只通过`/release-push` 命令触发.",
+			"author": {
+				"name": "ebming",
+				"email": "ag@ebming.com"
+			},
+			"strict": false,
+			"source": "./plugins/release-push",
+			"category": "productivity"
 		}
 	]
 }
