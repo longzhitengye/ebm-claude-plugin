@@ -10,7 +10,7 @@ description: 发布版本的时候,修改版本号,生成 changelog,并且 push 
 ### Step 3: 如果没有`CHANGELOG.md`,建立一个.
 ### Step 4: 查找上一个 `chore(release)` commit。
   - 如果找到，比较该 commit 到 HEAD 之间的变更，生成 changelog。
-  - 如果没有，询问用户要从哪个 commit 开始比较，然后生成 changelog。
+  - 如果没有，从前一个 commit 开始比较，然后生成 changelog。
   - 将内容写入 `CHANGELOG.md`。
 ### Step 5: 执行`git add -A`.
 ### Step 6: 生成 conventional commit，格式为 `chore(release): v新版本号`。
