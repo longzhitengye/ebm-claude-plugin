@@ -30,7 +30,7 @@ Claude Code 插件集合，提供开发工具和效率增强。
 
 ```bash
 # 添加 marketplace
-/plugin marketplace add https://gitea.ryzes.com/longzhitengye/ebm-claude-plugin.git
+/plugin marketplace add longzhitengye/ebm-claude-plugin
 
 # 安装插件
 /plugin install glm-usage
