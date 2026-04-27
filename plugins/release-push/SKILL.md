@@ -7,6 +7,7 @@ description: 发布版本的时候,修改版本号,生成 changelog,并且 push 
   - 读取 `references/languages.md`，检查项目根目录下存在哪个标识文件，确定项目类型。
 ### Step 2: 更新版本号
   - 根据 `Step 1` 得到的项目类型,从对应的文件中得到版本号,询问用户要bump的类型(major/minor/patch/build)，其中build对应SemVer中+号后的构建号,更新版本号.
+  - 当 bump 类型为 major/minor/patch 时，构建号重置为 0。
   - 检查 `references/languages.md` 中该语言是否有额外修改项，如果有，一并更新对应文件.
 ### Step 3: 如果没有`CHANGELOG.md`,建立一个.
 ### Step 4: 查找上一个 `chore(release)` commit。
