@@ -15,5 +15,5 @@ description: 发布版本的时候,修改版本号,生成 changelog,并且 push 
   - 如果没有，从前一个 commit 开始比较，然后生成 changelog。
   - 将内容写入 `CHANGELOG.md`。
 ### Step 5: 执行`git add -A`.
-### Step 6: 生成 conventional commit，格式为 `chore(release): v新版本号`。
+### Step 6: 生成 conventional commit，格式为 `chore(release): 新版本号`。
 ### Step 7: 如果有远程仓,提交到远程仓.
